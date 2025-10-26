@@ -1,0 +1,21 @@
+version: '3'
+
+tasks:
+  up-ambient-mesh:
+    desc: "Setup Istio Ambient Mesh Environment"
+    dir:  ./ambient-mash
+    cmds:
+          - chmod +x ./setup-ambient-mesh.sh
+          - ./setup-ambient-mesh.sh
+  up-permguard:
+    desc: "Setup Permguard Environment"
+    dir:  ./permguard
+    cmds:
+          - chmod +x ./setup-permguard.sh
+          - ./setup-permguard.sh
+  up:
+    desc: "Setup Permguard with Istio Ambient Mesh Environment"
+    dir:  ./
+    cmds:
+          - task: up-ambient-mesh
+          - task: up-permguard

@@ -25,7 +25,7 @@ Optional (depending on what you want to run locally):
 ```md
 permguard-keycloak-lab/  
 ├── docs/                # Documentation and diagrams  
-├── istio/               # Istio setup  
+├── ambient-mesh/        # Istio Ambient Mesh setup  
 │   └── ...  
 ├── permguard/           # Permguard setup  
 │   └── ...  
