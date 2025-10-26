@@ -51,7 +51,7 @@ fi
 
 # 3. Labeling for Ambient Mesh Enrollment
 FULL_LABEL="${AMBIENT_LABEL_KEY}=${AMBIENT_LABEL_VALUE}"
-echo "🏷️ INFO: Labeling namespace '${TARGET_NAMESPACE}' to enroll it into Ambient Mesh (${FULL_LABEL})..."
+echo "🏷️  INFO: Labeling namespace '${TARGET_NAMESPACE}' to enroll it into Ambient Mesh (${FULL_LABEL})..."
 
 # Check if the label is already present with the correct value
 # Use '|| true' to prevent 'set -e' from exiting if the label doesn't exist (jsonpath error)
